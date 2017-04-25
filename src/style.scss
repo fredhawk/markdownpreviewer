@@ -1,3 +1,23 @@
 body {
   background: salmon;
+  #root {
+    width: 800px;
+    margin: 0 auto;
+    footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 0.7rem;
+      .githublink {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        // color: $dark-green;
+        .github-icon {
+          margin-left: 5px;
+          // fill: $dark-green;
+        }
+      }
+    }
+  }
 }
