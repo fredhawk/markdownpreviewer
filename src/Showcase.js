@@ -1,11 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Showcase = () => {
+const Showcase = (props) => {
   return (
     <div>
-      put output here
+      {props.output}
     </div>
   );
 };
+
+Showcase.defaultProps = {
+  output: `Write some Markdown.`
+}
+
+Showcase.propTypes = {
+  output: PropTypes.string
+}
 
 export default Showcase;
