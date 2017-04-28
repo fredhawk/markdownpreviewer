@@ -5,7 +5,6 @@ import Header from './Header';
 import Footer from './Footer';
 import Previewer from './Previewer';
 
-
 ReactDOM.render(
   <div>
     <Header />
