@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 
 const Showcase = (props) => {
   return (
-    <div>
-      {props.output}
-    </div>
+    <div dangerouslySetInnerHTML={{__html: props.output}} />
   );
 };
 

@@ -12,7 +12,7 @@ class Previewer extends Component {
   }
   handleUpdate() {
     this.setState(prevState => ({
-      result: document.getElementById(`text-input`).value
+      result: marked(document.getElementById(`text-input`).value)
     }));
   }
   render() {
