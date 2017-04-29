@@ -2,13 +2,16 @@ body {
   #root {
     // width: 800px;
     // margin: 0 auto;
+    .previewer {
+      margin-bottom: 2em;
+    }
     @media (min-width: 900px) {
       .previewer {
         display: flex;
         justify-content: space-around;
       }
     }
-    footer {
+    #footer {
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -17,11 +20,6 @@ body {
         text-decoration: none;
         display: flex;
         align-items: center;
-        // color: $dark-green;
-        .github-icon {
-          margin-left: 5px;
-          // fill: $dark-green;
-        }
       }
     }
   }
