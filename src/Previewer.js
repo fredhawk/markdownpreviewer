@@ -24,9 +24,10 @@ class Previewer extends Component {
             <TextField
               floatingLabelText="Write some markdown here."
               rows={2}
-              rowsMax={30}
+              rowsMax={5}
               onChange={this.handleUpdate}
               id="text-input"
+              multiLine
             />
           </article>
           <article className="showcase">
