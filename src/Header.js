@@ -1,13 +1,9 @@
 import React from 'react';
+import AppBar from 'material-ui/AppBar';
 
 const Header = () => {
   return (
-    <div>
-      <header>
-        <h1 className="title">Markdown Previewer</h1>
-        <h4 className="tagline">Preview your Markdown</h4>
-      </header>
-    </div>
+    <AppBar title="Markdown Previewer" />
   );
 };
 
