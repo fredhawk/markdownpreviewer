@@ -1,10 +1,9 @@
 import React from 'react';
-import {BottomNavigation, BottomNavigationItem} from 'material-ui/BottomNavigation';
 import Paper from 'material-ui/Paper';
 import SvgIcon from 'material-ui/SvgIcon';
 
 const iconStyles = {
-  marginLeft: 5,
+  marginLeft: 10,
 }
 
 const GithubIcon = (props) => (
@@ -13,9 +12,9 @@ const GithubIcon = (props) => (
   </SvgIcon>
 );
 
-const Footer = () => {
+const Creator = () => {
   return (
-    <Paper zDepth={1} id="footer">
+    <div id="creator">
       <p className="madeby">
         Made by Fred Hawk
       </p>
@@ -30,8 +29,8 @@ const Footer = () => {
           style={iconStyles}
         />
       </a>
-    </Paper>
+    </div>
   );
 };
 
-export default Footer;
+export default Creator;
