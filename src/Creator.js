@@ -4,6 +4,7 @@ import SvgIcon from 'material-ui/SvgIcon';
 
 const iconStyles = {
   marginLeft: 10,
+  fill: `white`
 }
 
 const GithubIcon = (props) => (
