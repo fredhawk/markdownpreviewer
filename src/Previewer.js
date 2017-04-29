@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import marked from 'marked';
 import TextField from 'material-ui/TextField';
+import Paper from 'material-ui/Paper';
+import {GridList, GridTile} from 'material-ui/GridList';
 import Showcase from './Showcase';
 
 class Previewer extends Component {
@@ -17,22 +19,40 @@ class Previewer extends Component {
     }));
   }
   render() {
+    const style = {
+      previewer: {
+        display: `flex`,
+        justifyContent: `space-around`,
+      },
+      gridList: {
+        width: `100%`
+      },
+      paper: {
+        // height: 200
+      }
+    }
     return (
       <div>
-        <section className="previewer">
-          <article className="input">
-            <TextField
-              floatingLabelText="Write some markdown here."
-              rows={2}
-              rowsMax={5}
-              onChange={this.handleUpdate}
-              id="text-input"
-              multiLine
-            />
-          </article>
-          <article className="showcase">
-            <Showcase output={this.state.result} />
-          </article>
+        <section style={style.previewer} className="previewer">
+          <GridList style={style.gridList}>
+            <GridTile>
+              <Paper zDepth={1} style={style.paper} className="input">
+                <TextField
+                  floatingLabelText="Write some markdown here."
+                  rows={3}
+                  rowsMax={10}
+                  onChange={this.handleUpdate}
+                  id="text-input"
+                  multiLine
+                />
+              </Paper>
+            </GridTile>
+            <GridTile>
+              <Paper zDepth={1} style={style.paper} className="showcase">
+                <Showcase output={this.state.result} />
+              </Paper>
+            </GridTile>
+          </GridList>
         </section>
       </div>
     );
