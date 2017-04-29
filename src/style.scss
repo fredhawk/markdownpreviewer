@@ -2,6 +2,12 @@ body {
   #root {
     // width: 800px;
     // margin: 0 auto;
+    @media (min-width: 900px) {
+      .previewer {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
     footer {
       display: flex;
       justify-content: space-around;

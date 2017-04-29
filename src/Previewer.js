@@ -20,20 +20,15 @@ class Previewer extends Component {
   }
   render() {
     const style = {
-      previewer: {
-        display: `flex`,
-        justifyContent: `space-around`,
-      },
       gridList: {
         width: `100%`
       },
     }
     return (
       <div>
-        <section style={style.previewer} className="previewer">
+        <section className="previewer">
           <GridList
             style={style.gridList}
-            cols={2}
             padding={20}
             cellHeight={`auto`}
           >
