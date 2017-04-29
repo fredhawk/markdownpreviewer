@@ -3,8 +3,21 @@ import Paper from 'material-ui/Paper';
 import SvgIcon from 'material-ui/SvgIcon';
 
 const iconStyles = {
-  marginLeft: 10,
-  fill: `white`
+  githubIcon: {
+    marginLeft: 10,
+    fill: `white`
+  },
+}
+const creatorStyles = {
+  display: `flex`,
+  flexDirection: `column`,
+  fontSize: `0.7rem`,
+  color: `white`,
+  githublink: {
+    textDecoration: `none`,
+    display: `flex`,
+    color: `white`,
+  }
 }
 
 const GithubIcon = (props) => (
@@ -15,19 +28,19 @@ const GithubIcon = (props) => (
 
 const Creator = () => {
   return (
-    <div id="creator">
+    <div id="creator" style={creatorStyles}>
       <p className="madeby">
         Made by Fred Hawk
       </p>
       <a
-        className="githublink"
+        style={creatorStyles.githublink}
         href="https://templink.somewhere"
         target="_blank"
         rel="noopener noreferrer"
       >
         Project on Github
         <GithubIcon 
-          style={iconStyles}
+          style={iconStyles.githubIcon}
         />
       </a>
     </div>

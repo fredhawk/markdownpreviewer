@@ -9,17 +9,5 @@ body {
         justify-content: space-around;
       }
     }
-    #creator {
-      display: flex;
-      flex-direction: column;
-      font-size: 0.7rem;
-      color: white;
-      .githublink {
-        text-decoration: none;
-        display: flex;
-        color: white;
-      }
-    }
-
   }
 }
