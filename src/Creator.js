@@ -29,7 +29,7 @@ const GithubIcon = (props) => (
 const Creator = () => {
   return (
     <div id="creator" style={creatorStyles}>
-      <p className="madeby">
+      <p>
         Made by Fred Hawk
       </p>
       <a
