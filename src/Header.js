@@ -8,12 +8,16 @@ const iconStyles = {
   marginTop: 12,
   paddingLeft: 15
 };
+const barStyles = {
+  marginBottom: 25
+}
 
 const Header = () => {
   return (
     <AppBar
       title="Markdown Previewer"
       iconElementLeft={<ActionHome style={iconStyles} color={blue50} />}
+      style={barStyles}
     />
   );
 };

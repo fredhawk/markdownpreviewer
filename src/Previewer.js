@@ -27,28 +27,31 @@ class Previewer extends Component {
       gridList: {
         width: `100%`
       },
-      paper: {
-        // height: 200
-      }
     }
     return (
       <div>
         <section style={style.previewer} className="previewer">
-          <GridList style={style.gridList}>
+          <GridList
+            style={style.gridList}
+            cols={2}
+            padding={20}
+            cellHeight={`auto`}
+          >
             <GridTile>
-              <Paper zDepth={1} style={style.paper} className="input">
+              <Paper zDepth={1} className="input">
                 <TextField
                   floatingLabelText="Write some markdown here."
                   rows={3}
-                  rowsMax={10}
+                  rowsMax={20}
                   onChange={this.handleUpdate}
                   id="text-input"
                   multiLine
+                  fullWidth
                 />
               </Paper>
             </GridTile>
             <GridTile>
-              <Paper zDepth={1} style={style.paper} className="showcase">
+              <Paper zDepth={1} className="showcase">
                 <Showcase output={this.state.result} />
               </Paper>
             </GridTile>
