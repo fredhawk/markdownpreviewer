@@ -34,7 +34,7 @@ const Creator = () => {
       </p>
       <a
         style={creatorStyles.githublink}
-        href="https://templink.somewhere"
+        href="https://github.com/osycon/markdownpreviewer"
         target="_blank"
         rel="noopener noreferrer"
       >
