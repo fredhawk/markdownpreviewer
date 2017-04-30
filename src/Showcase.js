@@ -4,18 +4,16 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 
 injectTapEventPlugin();
 
-const Showcase = (props) => {
-  return (
-    <div dangerouslySetInnerHTML={{__html: props.output}} />
-  );
+const Showcase = props => {
+  return <div dangerouslySetInnerHTML={{ __html: props.output }} />;
 };
 
 Showcase.defaultProps = {
   output: `Write some Markdown.`
-}
+};
 
 Showcase.propTypes = {
   output: PropTypes.string
-}
+};
 
 export default Showcase;

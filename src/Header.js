@@ -11,7 +11,7 @@ const iconStyles = {
 };
 const barStyles = {
   marginBottom: 25
-}
+};
 
 const Header = () => {
   return (
